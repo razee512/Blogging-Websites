@@ -1,5 +1,6 @@
 
 
+
 body {
     font-family: 'Poppins', sans-serif;
   }
@@ -85,3 +86,30 @@ body {
     margin-top: 50px;
   }
   
+
+
+body {
+  font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
+}
+
+.hero {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.blog-container {
+  display: grid;
+  gap: 20px;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
