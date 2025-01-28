@@ -1,12 +1,12 @@
 /* General styles */
 body {
-  font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
+  font-family: Poppins, sans-serif; 
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
 
-/* Navigation bar */
+
 header {
   background-color: #333;
   color: white;
@@ -39,30 +39,23 @@ header nav ul li a.active {
   font-weight: 600;
 }
 
-/* Hero section */
+
 .hero {
   background-color: #f4f4f4;
   padding: 50px;
   text-align: center;
 }
 
-/* Blog container */
+
 .blog-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /* Added gap for spacing between items */
-  margin-top: 20px;
+  display: grid;
+  gap: 20px;
 }
 
-/* Blog posts */
 .blog-post {
-  width: 30%;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
+  background-color: white;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; /* Optional: Adding rounded corners */
+  border-radius: 8px; 
 }
 
 .blog-post img {
@@ -83,7 +76,7 @@ header nav ul li a.active {
 /* Read more link */
 .read-more {
   text-decoration: none;
-  color: #333;
+  color: #007bff;
   font-weight: 600;
 }
 
