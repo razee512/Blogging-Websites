@@ -1,92 +1,27 @@
-<<<<<<< HEAD
 /* styles/blog.css */
 
 body {
-  font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
-}
-
-.hero {
-  background-color: #f0f0f0;
-  text-align: center;
-}
-
-.blog-container {
-  display: grid;
-  gap: 20px;
-}
-
-.blog-post {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.read-more {
-  color: #007bff;
-  text-decoration: none;
-}
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | My Blog</title>
-  <link rel="stylesheet" href="../styles/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <div class="logo">My Blog</div>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to Our Blog</h1>
-    <p>Discover the latest articles, insights, and trends.</p>
-  </section>
-
-  <!-- Blog Posts -->
-  <section class="blog-container">
-    <div class="blog-post">
-      <img src="https://source.unsplash.com/600x400/?technology" alt="Tech Blog">
-      <h2>Exploring the Future of AI</h2>
-      <p>Artificial Intelligence is transforming industries. Read more about its impact and future developments.</p>
-      <a href="#" class="read-more">Read More</a>
-    </div>
-
-    <div class="blog-post">
-      <img src="https://source.unsplash.com/600x400/?travel" alt="Travel Blog">
-      <h2>Top 10 Destinations for 2025</h2>
-      <p>Looking for your next adventure? Check out these breathtaking travel destinations.</p>
-      <a href="#" class="read-more">Read More</a>
-    </div>
-
-    <div class="blog-post">
-      <img src="https://source.unsplash.com/600x400/?food" alt="Food Blog">
-      <h2>Healthy Eating Tips</h2>
-      <p>Discover simple and delicious ways to maintain a healthy diet without sacrificing taste.</p>
-      <a href="#" class="read-more">Read More</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Blog. All rights reserved.</p>
-  </footer>
-
-</body>
-
-</html>
->>>>>>> 2424fe9af52d4dbb98d6b46dd7f0dde3ef191672
+    font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
+  }
+  
+  .hero {
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .blog-container {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .blog-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
