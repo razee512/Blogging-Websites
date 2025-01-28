@@ -1,113 +1,94 @@
-
-
+/* General styles */
 body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  header {
+    font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar */
+header {
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
-  }
-  
-  header nav .logo {
+}
+
+header nav .logo {
     font-size: 1.5em;
     font-weight: 600;
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     display: inline;
     margin-right: 15px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
-  }
-  
-  header nav ul li a.active {
+}
+
+header nav ul li a.active {
     font-weight: 600;
-  }
-  
-  .hero {
+}
+
+/* Hero section */
+.hero {
     background-color: #f4f4f4;
     padding: 50px;
     text-align: center;
-  }
-  
-  .blog-container {
+}
+
+/* Blog container */
+.blog-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-  }
-  
-  .blog-post {
+}
+
+/* Blog posts */
+.blog-post {
     width: 30%;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .blog-post img {
+}
+
+.blog-post img {
     width: 100%;
     height: auto;
-  }
-  
-  .blog-post h2 {
+}
+
+.blog-post h2 {
     font-size: 1.4em;
     margin-top: 15px;
-  }
-  
-  .blog-post p {
+}
+
+.blog-post p {
     font-size: 1em;
     margin-bottom: 15px;
-  }
-  
-  .read-more {
+}
+
+/* Read more link */
+.read-more {
     text-decoration: none;
     color: #333;
     font-weight: 600;
-  }
-  
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #333;
     color: white;
     padding: 15px;
     text-align: center;
     margin-top: 50px;
-  }
-  
-
-
-body {
-  font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
-}
-
-.hero {
-  background-color: #f0f0f0;
-  text-align: center;
-}
-
-.blog-container {
-  display: grid;
-  gap: 20px;
-}
-
-.blog-post {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.read-more {
-  color: #007bff;
-  text-decoration: none;
 }
