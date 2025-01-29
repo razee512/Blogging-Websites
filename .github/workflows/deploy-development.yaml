@@ -23,11 +23,11 @@ jobs:
       - name: Build static site
         run: npx parcel build src/index.html
         
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: github-pages-artifact # Ensure this matches the artifact name you reference in the deploy job
-          path: dist/
+          name: github-pages-artifact # Ensure this is the correct name referenced in the deploy step
+          path: dist/ # This is the output folder of your build (adjust if your build output is elsewhere)
 
   deploy:
     runs-on: ubuntu-latest
@@ -42,8 +42,10 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v3
         with:
-          name: github-pages-artifact # This name must match the name from the upload step
+          name: github-pages-artifact # This must match the artifact name from the upload step
           
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_path: ./github-pages-artifact # Ensure this points to the correct location of the downloaded artifact
