@@ -58,7 +58,7 @@ header nav ul li a.active {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ddd;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 50%);  /* Fixed: Alpha value in percentage */
+  box-shadow: 10px 10px 5px rgba(0 0 0 / 50%);  /* Updated for modern notation */
 }
 
 .blog-post img {
