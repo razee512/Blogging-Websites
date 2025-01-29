@@ -1,6 +1,6 @@
 <style>
   body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -13,7 +13,7 @@
     text-align: center;
   }
 
-  header nav .logo {
+  header .logo {
     font-size: 1.5em;
     font-weight: 600;
   }
@@ -25,7 +25,7 @@
   }
 
   header nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 15px;
   }
 
@@ -53,6 +53,7 @@
 
   .blog-post {
     width: 30%;
+    min-width: 280px;
     margin-bottom: 20px;
     background-color: white;
     padding: 20px;
