@@ -1,25 +1,32 @@
 name: Deploy Development
+
 on:
   push:
     branches:
       - develop
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          
       - name: Install dependencies
         run: npm install
+        
       - name: Build static site
         run: npx parcel build src/index.html
+        
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
+          name: github-pages-artifact # Ensure this matches the artifact name you reference in the deploy job
           path: dist/
 
   deploy:
@@ -32,6 +39,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages-artifact # This name must match the name from the upload step
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
