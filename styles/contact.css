@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* General styles */
 body {
   font-family: Poppins, sans-serif; 
@@ -89,7 +89,7 @@ footer {
   text-align: center;
   margin-top: 50px;
 }
-=======
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -156,28 +156,28 @@ footer {
 </html>
 
 
+
 body {
-    font-family: Poppins, sans-serif; /* Removed the quotes around Poppins */
-  }
-  
-  .hero {
+    font-family: Poppins, sans-serif;
+}
+
+.hero {
     background-color: #f0f0f0;
     text-align: center;
-  }
-  
-  .blog-container {
+}
+
+.blog-container {
     display: grid;
     gap: 20px;
-  }
-  
-  .blog-post {
+}
+
+.blog-post {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-  }
-  
-  .read-more {
+}
+
+.read-more {
     color: #007bff;
     text-decoration: none;
-  }
->>>>>>> 0587dad3ee4b6f4c7149e99feb28e7d8e206bd85
+\
